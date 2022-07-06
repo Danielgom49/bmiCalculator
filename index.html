@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="container1 seccion1">
+                <h2 class="title1">CALCULADORA IMC</h1>
+                    <p class="parrafo1">Descubre el indice de masa corporal</p>
+                    <div class="contenedorHijo">
+                        <div class="date">
+                            <label for="sexo">Sexo</label>
+                            <select id="sexo">
+                                <option value="hombre">Hombre</option>
+                                <option value="mujer">Mujer</option>
+                            </select>
+                        </div>
+                        <div class="date">
+                            <label for="edad">Edad</label>
+                            <input type="number" id="edad"><br>
+
+                        </div>
+                        <div class="date">
+                            <label for="peso">Peso</label>
+                            <input type="number" id="peso">
+                            <p class="parrafo2">KG</p>
+                        </div>
+                        <div class="date">
+                            <label for="altura">Altura</label>
+                            <input type="number" id="altura">
+                            <p class="parrafo2">M</p>
+                        </div>
+                        <button class="btnCalcular" id="calcular" onclick="calcular()">CALCULAR IMC</button>
+
+                    </div>
+            </div>
+        </div>
+        <div class="container1 seccion2">
+            <div class="container2 result" id="respuesta">
+                <h2 class="title2">Resultado</h2>
+                <p id="resultado" class="resultado">...</p>
+                <img src="./images/Captura de pantalla de 2021-11-29 10-25-56.png" alt="" width="250" height="25">
+                <span class="triangulo triangulo-saludable"></span>
+            </div>
+            <hr>
+            <div class="container2">
+                <p id="pesoIdeal">Peso ideal:50-68()</p>
+            </div>
+            <div class="lista">
+                <ul>
+                    <li class="li1"><img class="bascula" src="./images/img1.png" alt="" width="20px">Bajo peso</li>
+                    <li class="li2"><img class="bascula" src="./images/img2.png" alt="" width="20px">Saludable</li>
+                    <li class="li3"><img class="bascula" src="./images/img3.png" alt="" width="20px">Exceso de peso</li>
+                    <li class="li4"><img class="bascula" src="./images/img4.png" alt="" width="20px">Obeso</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
